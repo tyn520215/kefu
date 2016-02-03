@@ -1,0 +1,114 @@
+
+.mykf{font-size:20px ;color:#ffffff;position: relative;text-align: center;margin-top: 50px;}
+#zskf{font-size:20px ;color:#ffffff;text-align: center;opacity: 0;top:70px;left:50px;position: absolute;
+    -webkit-animation: textopp .5s ease 3.5s;
+
+
+}
+@-webkit-keyframes textopp{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+
+}
+figure{
+    width:100%;margin:0 auto;display:block;position: absolute;
+    }
+figcaption{color: black;position: absolute;font-size:1rem;width: 75%;height: 70px;line-height: 70px;background-color: white;
+    text-align: left;bottom:0;border-bottom-right-radius:10px;border-bottom-left-radius:10px;left:12.5%; }
+figcaption h3{font-size:16px;margin-top: -15px;margin-left: 10px;}
+figcaption h3:after{
+    content: "";
+    width:20px;
+    height:20px;
+    background:url(starOff.png);
+    float:left;
+    position: absolute;
+    top:10px;
+    background-position: -10px -10px;
+    left:50px;
+}
+figcaption p{
+    font-size:14px;
+    color: #5b5b5b;
+    position: absolute;
+    top:10px;
+    left:10px;
+
+
+}
+.photo{
+     display: block;
+     width:80%;margin:0 auto;
+
+     opacity: 0;
+     transform:scale(0.1);
+     -webkit-transform:scale(0.1);
+ }
+
+.photo1{
+    border-radius: 50%;
+    opacity: 1;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    transition:all 1s 2.5s;
+    -webkit-transition:all 1s 2.5s;
+}
+    .bg{width: 40%;height:60%;background: #00cae5;top:1rem;z-index: -10;position: fixed;
+    opacity: 0;
+    transform:scale(0.1) rotate(0deg);    -webkit-transform:scale(0.1) rotate(0deg);
+}
+.bg1{opacity: 1;
+    transform:scale(1) rotate(360deg);    -webkit-transform:scale(1) rotate(360deg);
+    transition:all 1s ease-out 4.5s;        -webkit-transition:all 1s ease-out 4.5s;
+}
+
+.kefuphoto{
+    opacity: 0;
+    transform:scale(0.1);
+    -webkit-transform:scale(0.1);
+    transition:all 1s 1s ;
+    -webkit-transition:all 1s 1s;
+
+}
+.move{-webkit-animation: ro 2s ease-in 2.5s}
+@-webkit-keyframes ro {
+    0%{-webkit-transform:rotate(0deg) }
+    100%{-webkit-transform:rotate(360deg) }
+
+}
+#but{ width: 58%;height: 50px;line-height: 50px;background-color: #1893e3;left:23%;text-align: center;
+    bottom: 15%;font-size: 18px;color:white;border-radius:10px;position: absolute}
+#but1{ width: 65%;height: 50px;line-height: 50px;background-color: #1893e3;left:20%;
+    text-align: center;font-size: 18px;color:white;border-radius:10px;opacity: 0;position: absolute;
+    bottom:15%;
+    -webkit-animation:opp .5s ease 3.5s  }
+
+
+@-webkit-keyframes opp{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+
+}
+
+/*.but12{opacity: 1;*/
+        /*-webkit-transition:all .5 5s;*/
+        /*transition:all .5 5s;}*/
+@charset "utf-8";
+*{margin:0;padding:0}
+html{height:100%}
+body{height:100%;background:url(shouye_nvsheng_bg.png);background-size:100% 100%}
+#header img{width:100%}
+.swiper-container{width:100%;-webkit-perspective:1200px;-moz-perspective:1200px;-ms-perspective:1200px;perspective:1200px;margin-top: 20%;position: absolute}
+.swiper-wrapper{margin-top:-20px;}
+.swiper-slide{width:75%;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;}
+.swiper-slide .main-img{width:75%;margin:0 auto;display:block;border-radius:10px;box-shadow: 0 5px 3px rgba(0.0.0,0.5)}
+#pagination{position:absolute;bottom:100px;width:100%}
+#pagination .swiper-pagination-bullet{width:9.5%;float:left;margin:0 0 0 6.15%;background:0;opacity:1}
+.swiper-pagination-bullet i{background:#41203f;width:24px;height:24px;line-height:24px;font-size:12px;border-radius:50px;display:block;font-style:normal;text-align:center;margin:0 auto;color:#f5b55c}
+.swiper-pagination-bullet-active i{-webkit-transform:scale(1.5);background:url(shouye_nvsheng_huangseb.png) no-repeat center 50%;background-size:auto 100%;color:#815d4b}
+@media screen and (min-height:481px){.swiper-wrapper{margin-top:20px}#pagination{bottom:110px}}
+@media screen and (min-height:569px){.swiper-wrapper{margin-top:10px;}#pagination{bottom:120px}
+    .swiper-pagination-bullet i{width:30px;height:30px;line-height:30px;font-size:15px}}
+#footer{position:absolute;bottom:0}#footer img{width:100%;display:block;}

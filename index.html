@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title></title>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/kefurem.css">
+</head>
+
+<body>
+<!--<div id="coustrom">-->
+    <!--我的专属客服-->
+<!--</div>-->
+<div class="swiper-container">
+		<div class="swiper-wrapper">
+		  <div class="swiper-slide">
+              <figure class="figurePhoto"><img src="images/kf.png" class="main-img" >
+                  <figcaption>小希</figcaption>
+              </figure>
+           <div class="bg"><img src="images/kf1.png" class="cire-img" ></div>
+           <div class="backGround"></div>
+          </div>
+			 <div class="swiper-slide">
+                 <figure class="figurePhoto"><img src="images/kf.png" class="main-img" >
+                     <figcaption>小希</figcaption>
+                </figure>
+                 <div class="bg"><img src="images/kf1.png" class="cire-img" ></div>
+                 <div class="backGround"></div>
+             </div>
+				<div class="swiper-slide">
+                    <figure class="figurePhoto"><img src="images/kf.png" class="main-img" >
+                        <figcaption>小希</figcaption>
+                    </figure>
+                    <div class="bg"><img src="images/kf1.png" class="cire-img" ></div>
+                    <div class="backGround"></div>
+                </div>
+				</div>
+			</div>
+    <p id="lanuage">用我们真诚的微笑，换取客户对我们服务的满意</p>
+	<div  id="but">就是她了!</div>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/kefu.js"></script>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 320) + 'px';
+                };
+
+        // Abort if browser does not support addEventListener
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

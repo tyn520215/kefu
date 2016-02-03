@@ -1,0 +1,165 @@
+*{margin: 0}
+/*/!* iphone 6 *!/*/
+/*@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){*/
+    /*html{font-size: 117.1875px;}*/
+/*}*/
+/*/!* iphone6 plus *!/*/
+/*@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){*/
+    /*html{font-size: 129.375px;}*/
+/*}*/
+html{font-size: 100px;font: "Helvetica Neue", Helvetica, Arial, sans-serif}
+body{height:100%;background:url(../images/shouye_nvsheng_bg.png);}
+#coustrom{width: 100%;height: 0.55rem;line-height: 0.55rem;color: white;background-color: #33a7ff;text-align: center;font-size: 0.24rem}
+.swiper-container{width:100%;-webkit-perspective:30rem;-moz-perspective:30rem;-ms-perspective:30rem;perspective:30rem;position: absolute;
+    height: 100% }
+.swiper-wrapper{margin-top: 0.94rem;}
+.swiper-slide{    width: 65%;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.swiper-slide .main-img{width:75%;margin:0 auto;display:block;border-radius:0.15rem;box-shadow: 0 0.25rem 0.15rem rgba(0.0.0,0.5);height: 2.2rem}
+.figurePhoto{
+    width:100%;
+    margin:0 auto;
+    display:block;
+    position: absolute;
+    background-color: #ffffff;
+    height: 2.65rem;
+    border-radius:0.15rem;
+}
+figcaption{
+    color: black;
+    position: absolute;
+    font-size: 0.24rem;
+    width: 100%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    background-color: white;
+    text-align: center;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+#lanuage{
+    font-size: 0.18rem;
+    color: #ffffff;
+    width: 65%;
+    position: absolute;
+    left: 17.5%;
+    bottom: 1.05rem;
+}
+#but{ width: 100%;height: 0.55rem;line-height: 0.55rem;background-color: #1893e3;text-align: center;
+    font-size: 0.24rem;color:white;position: absolute;bottom:0}
+.photo{
+    display: block;
+    width:80%;margin:0 auto;
+    opacity: 0;
+    transform:scale(0.1);
+    -webkit-transform:scale(0.1);
+}
+.photo1{
+    border-radius: 50%;
+    opacity: 1;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    transition:all 1s 2.5s;
+    -webkit-transition:all 1s 2.5s;
+}
+.bg{width: 1.6rem;height:1.6rem;border-radius: 0.8rem;overflow: hidden;top:0.1rem;position:relative;background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    z-index:-13;
+    opacity: 0;
+    transform:scale(0.1);    -webkit-transform:scale(0.1);
+}
+.backGround{
+    width: 1.6rem;height:1.6rem;border-radius: 0.8rem;overflow: hidden;position:relative;background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;.
+z-index:-23;
+    top:-26%;
+
+}
+.bg1{opacity: 1;
+    transform:scale(1);    -webkit-transform:scale(1);
+    transition:all 1s ease 1.5s;        -webkit-transition:all 1s ease 1.5s;
+}
+.cire-img{width: 1.6rem}
+.kefuphoto{
+    opacity: 0;
+    transform:scale(0.1);
+    -webkit-transform:scale(0.1);
+    transition:all 1s ease ;
+    -webkit-transition:all 1s ease;
+}
+.img-wave{-webkit-animation: animate-scaleout 1s infinite 2s;animation: animate-scaleout 1s infinite 2s;}
+
+@-webkit-keyframes photoChange{
+    0%{
+        opacity: 1;
+        transform:scale(0);
+        -webkit-transform:scale(0)
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        -webkit-transform: scale(0.1);
+    }
+}
+@-webkit-keyframes photoChange{
+    0%{
+        opacity: 1;
+        transform:scale(0);
+        -webkit-transform:scale(0);
+    }
+    50%{
+        opacity: 0;
+        transform:scale(0.1);
+        -webkit-transform:scale(0.1);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(0);
+        -webkit-transform:scale(0);
+    }
+}
+.movePhoto{
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+}
+@-webkit-keyframes move{
+    100%{}
+
+}
+.move{-webkit-animation: ro 2s ease-in 2.5s}
+@-webkit-keyframes ro {
+    0%{-webkit-transform:rotate(0deg) }
+    100%{-webkit-transform:rotate(360deg) }
+
+}
+@keyframes animate-scaleout {
+    from {
+        transform: scale(1, 1);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes animate-scaleout {
+    from {
+        -webkit-transform: scale(1, 1);
+        opacity: 0.6;
+    }
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,24 @@
+*{margin: 0}
+html{font-size:100px;}
+body{font-size:14px;}
+.top_photo{
+    width: 100%;
+    height:2.4rem;
+    background-color:#33a7ff ;
+    position: relative;
+    text-align: center;
+}
+.user_photo{width: 1.6rem;height:1.6rem;border-radius: 0.8rem;overflow: hidden;top:0.1rem;position:relative;background-color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+}
+.userimg{width: 1.6rem;}
+.top_photo .name{margin-top: 0.15rem;color: #99d3ff;font-size: 0.2rem }
+.top_photo .Tips{color: #ffffff;font-size: 0.14rem;width: 95%;margin: 0.1rem auto;  }
+.question{padding-top: 0.3rem;}
+.middle{width: 80%;margin: 0 auto;}
+.question{font-size: 0.15rem;color:#000;margin-bottom: 0.1rem;}
+.question:before{text-align:center;content:"Q";width:0.15rem;height: 0.15rem;border-radius: 0.075rem;background-color: rgb(102,189,255);display: block;float: left;clear: both;margin-right: 0.05rem;color: #ffffff;}
+.answer{font-size: 0.12rem;color: #555555;}
+.answer:before{text-align:center;content:"A";width:0.15rem;height: 0.15rem;border-radius: 0.075rem;background-color: rgb(255,172,76);display: block;float: left;clear: both;margin-right: 0.05rem;color: #ffffff;margin-bottom: 0.05rem;}
+.answerTwo{margin-left: 0.2rem;}
